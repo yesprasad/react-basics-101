@@ -1,0 +1,57 @@
+
+body {
+	padding: 30px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.7;
+	color: #777;
+}
+
+.header {
+	height: 40vh;
+	background-image: linear-gradient(
+		to right bottom,
+		rgba(137, 196, 244, 0.7),
+		rgba(75, 119, 190, 0.8));
+	background-size: cover;
+	position: relative;
+
+	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.logo-box {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+}
+
+.logo {
+	height: 45px;
+}
+
+
+.text-box {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.heading-primary {
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.heading-primary-main {
+	display: block;
+	letter-spacing: 15px;
+	font-weight: 400;
+	font-size: 35px;
+}
+
+.heading-primary-sub {
+	display: block;
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 38px;
+}
