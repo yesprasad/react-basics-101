@@ -1,6 +1,6 @@
 import React from 'react';
 import SideNav from 'react-simple-sidenav';
-import {Link} from 'react-router-dom';
+import SideNavItems from './sideNav_items'
 
 const SideNavigation = (props) => {
     return(
@@ -13,12 +13,7 @@ const SideNavigation = (props) => {
                 padding:'10px',
                 cursor: 'pointer'
             }}>
-            <div>
-                      <Link to='/home'>Home</Link>
-                  </div>
-                  <div>
-                  <Link to='/PointsTable'>Points Table</Link>
-                  </div>
+            <SideNavItems/>
             </SideNav>
         </div>
     )

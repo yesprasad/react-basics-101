@@ -8,14 +8,15 @@ const Header =(props) => {
 
     const navBars = () => {
         return(
-            <div className='bars'>
+            <div >
                 <FontAwesome
                 name='bars'
                 onClick= {props.onOpenNav}
                 style={{
                     color: '#000',
-                    padding:'10px',
-                    cursor: 'pointer'
+                    padding:'10px 10px',
+                    cursor: 'pointer',
+                    fontSize:'28px'
                 }}>
                  
                 </FontAwesome>
