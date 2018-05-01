@@ -1,11 +1,31 @@
 import React from 'react';
 import './header.css';
+import FontAwesome from 'react-fontawesome';
+import SideNav from '../SideNav/sideNav';
+import {Link} from 'react-router-dom';
 
-const Header =() => {
+const Header =(props) => {
+
+    const navBars = () => {
+        return(
+            <div className='bars'>
+                <FontAwesome
+                name='bars'
+                onClick= {props.onOpenNav}
+                style={{
+                    color: '#000',
+                    padding:'10px',
+                    cursor: 'pointer'
+                }}>
+                 
+                </FontAwesome>
+            </div>
+        )
+    }
 
     const logo = () => {
         return(
-            <div class="logo-box">
+            <div className="logo-box">
                 <img className='logo' src="images/ipl_logo.png" alt='ipl logo'/>
             </div>
         );
@@ -22,10 +42,15 @@ const Header =() => {
        );
     };
 
+    
+
     return(
         <header className='header'>
-         {logo()}
-         {headerText()}
+        
+        <SideNav {...props} />
+            {navBars()}
+            {logo()}
+            {headerText()}
         </header>
     )
 }
