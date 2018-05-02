@@ -1,10 +1,11 @@
 import React from 'react';
-import './footer';
+import './footer.css';
 
 const Footer = () => {
     return(
-        <div className='logo-box'>
-            <img className='logo' src="images/ipl_logo.png" alt='ipl logo'/>
+        <div className='footer'> 
+          <span>  <img className='footer-logo' src="images/ipl_logo.png" alt='ipl logo'/></span>
+          <span>(c) 2018 BCCI </span>
         </div>
     )
 }

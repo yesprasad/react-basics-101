@@ -27,7 +27,7 @@ class Layout extends Component {
                 <div>
                 {this.props.children}
                 </div>
-                <Footer/>
+               <Footer />
                 
             </div>
         )

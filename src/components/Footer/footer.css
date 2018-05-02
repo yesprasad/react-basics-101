@@ -1,7 +1,14 @@
-.logo {
-	height: 75px;
+.footer {
+    margin-top: 20px;
+    background-image: linear-gradient(
+		to right bottom,
+		rgba(137, 196, 244, 0.7),
+		rgba(75, 119, 190, 0.8));
+    display: flex;
+    align-items: center;
 }
 
-.logo-box {
-	bottom: 20px;
+.footer-logo {
+    height: 60px;
+    padding: 10px;
 }
