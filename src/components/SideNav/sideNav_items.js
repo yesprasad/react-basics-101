@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
+import './sidenav.css';
 
 const SideNavItems = () => {
     return(
@@ -14,7 +15,7 @@ const SideNavItems = () => {
                 
             </div>
             <div>
-            <Link to='/pointsTable'>
+            <Link to='/pointsTable' className ='links'>
                 <FontAwesome name='bar-chart' style={{
                  padding:'10px'
                 }}/>Points Table
